@@ -1,3 +1,5 @@
+import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 type Props = {}
@@ -9,7 +11,28 @@ const Navbar = (props: Props) => {
             <div className='hidden sm:block'>
                 social links
             </div>
+            <div className='flex justify-between items-center gap-10'>
+              <Link href="/">Home</Link>
+              <Link href="/">Trending</Link>
+              <Link href="/">About</Link>
+            </div>
+            <div>
+              <p>
+                Sign In
+              </p>
+            </div>
         </nav>
+        <div className='flex justify-between gap-8 mt-5 mb-4 mx-10'>
+          <div className='basis-2/3 md:mt-3'>
+            <h1 className='font-bold text-3xl md:text-5xl'>THE AI BLOG</h1>
+            <p className='text-sm mt-3'>
+              Blog dedicated to AI and generation and job automation
+            </p>
+          </div>
+          <div className='basis-full relative w-auto h-32'>
+            {/* <Image></Image> */}
+          </div>
+        </div>
     </header>
   )
 }
