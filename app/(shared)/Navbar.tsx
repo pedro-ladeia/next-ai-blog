@@ -26,13 +26,14 @@ const Navbar = (props: Props) => {
           <div className='basis-2/3 md:mt-3'>
             <h1 className='font-bold text-3xl md:text-5xl'>THE AI BLOG</h1>
             <p className='text-sm mt-3'>
-              Blog dedicated to AI and generation and job automation
+              Blog dedicated towards AI and generation and job automation
             </p>
           </div>
           <div className='basis-full relative w-auto h-32'>
-            {/* <Image></Image> */}
+            Image right here
           </div>
         </div>
+        <hr className='border-1' mx-10 />
     </header>
   )
 }
