@@ -16,6 +16,24 @@ const Footer = (props: Props) => {
                     </p>
                     <p>The AI blog All Rights Reserved</p>
                 </div>
+                {/* Second Column */}
+
+                <div className='mt-16 basis-1/2 sm:mt-0'>
+                    <h4 className='font-bold'>Links</h4>
+                    <p className='my-5'>Virtute Spiritus</p>
+                    <p className='my-5'>Virtute Spiritus</p>
+                    <p>Virtute Spiritus</p>
+                </div>
+
+                {/*Third Column */}
+
+                <div className='mt-16 basis-1/2 sm:mt-0'>
+                    <h4 className='font-bold'>Contacts Us</h4>
+                    <p className='my-5'>- 1808 -</p>
+                    <p className='my-5'>- 1808 -</p>
+                    <p>- 1808 -</p>
+                </div>
+
             </div>
         </footer>
     )
