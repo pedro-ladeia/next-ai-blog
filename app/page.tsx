@@ -4,8 +4,17 @@ import Travel from "app/(home)/Travel";
 import Other from "app/(shared)/Other"
 import Subscribe from "app/(shared)/Subscribe";
 import Sidebar from "app/(shared)/Sidebar"
+import { prisma } from "app/api/client";
+import { Post } from "@prisma/client";
 
-export default function Home() {
+const getPosts = async() => {
+  const posts = await prisma.post.findMany(); //Take all the posts in db
+  return posts
+}
+
+export default async function Home() {
+  const posts:Array<Post> = await (getPosts());
+  // console.log('posts :' + JSON.stringify(posts));
   return (
     <main className="px-10 leading-7">
       <Trending />
